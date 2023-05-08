@@ -1,0 +1,130 @@
+.product-card{
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+}
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #4b4b46;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.product-card:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.product-sold::before{
+    text-align: center;
+    vertical-align: center;
+    content:"";
+    position:absolute;
+    transition:all .5s ease;
+    top:50%;
+    left:50%;
+    width:calc(100% - 4px);
+    height:calc(100% - 4px);
+    background-color: rgb(246, 245, 241);
+    z-index:1;
+    opacity:1;
+    visibility:hidden
+}
+.product-sold:hover::before {
+    opacity: 0.4;
+    visibility: visible;
+}
+.product-card-img{
+    width: 100%;
+    height: 100%;
+}
+.product-card-name {
+    padding: 10px;
+}
+.product-card-detail{
+    padding: 10px;
+}
+.product-card-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-card-btn{
+    color: black;
+    border: 0;
+    cursor:pointer;
+    background:var(--body_bg);
+    z-index: 2;
+}
+.product-card-btn:hover,
+.product-card-btn:focus{
+    border:0;
+    color: var(--second_black);
+}
+.col-pc{
+    position:relative;
+    width:100%;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+    margin: 15px;
+    /* max-width: 1500px; */
+}
+.pagesDiv{
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+}
+.disabled{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 10px;
+    color: var(--border_color);
+    background: none;
+    /*border: 1px solid #bfbfbf;*/
+    vertical-align: middle;
+}
+.current{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 2px;
+    color: black;
+    background: none;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.pagesDiv a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--txt_third_color);
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    text-align: center;
+    margin: 0 2px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+a.prevPage,a.nextPage{
+    background: none;
+    margin: 0 10px;
+}

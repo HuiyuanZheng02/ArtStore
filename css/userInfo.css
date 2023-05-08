@@ -1,0 +1,33 @@
+.form-input {
+    background: white;
+    border:1px solid var(--border_color);
+    outline: none;
+    padding: 8px 8px;
+    margin: 0;
+    width:50%;
+    line-height: 20px;
+    border-radius: 0px;
+    display: none;
+}
+.form-input:focus {
+    border: 2px solid var(--main_color);
+}
+#handleRecharge{
+    display: none;
+}
+.order-img-container{
+    padding: 0;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+.order-img{
+    /*margin: 0;*/
+    /*position: absolute;*/
+    vertical-align: middle;
+}
+/*.order-img img{*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    vertical-align: top;*/
+/*}*/

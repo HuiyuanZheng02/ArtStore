@@ -1,0 +1,13 @@
+:root{
+    --body_bg: #fcf9ee;
+    --txt_color: #000000;
+    --main_color:#f0c239;
+    --border_color:#e2e1d7;
+    --txt_second_color: #fdfbf7;
+    --txt_third_color: #9b9a92;
+    --second_black:#494439;
+    --font_main_family:'Asul', sans-serif;
+    --font_name_family: 'Long Cang', cursive;
+    --font_chinese_family:'STKaiti';
+    --bg-overlay: rgba(0,0,0,0.5);
+}
